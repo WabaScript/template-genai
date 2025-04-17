@@ -3,8 +3,13 @@ import React, { createContext, useState, useContext } from "react";
 const ChatContext = createContext();
 
 export const ChatProvider = ({ children }) => {
+  const systemPrompt = {
+    role: "system",
+    content: `You are a helpful assistant. You can answer questions, provide information, and assist with various tasks.`
+  };
+
   const [chatMessages, setChatMessages] = useState([]);
-  const [llmMessages, setLlmMessages] = useState([]);
+  const [llmMessages, setLlmMessages] = useState([systemPrompt]);
 
   const addLlmMessage = (message) => {
     setLlmMessages((prevMessages) => [...prevMessages, message]);

@@ -88,8 +88,11 @@ export const useOllamaChat = () => {
     } catch (error) {
       if (error.name === 'AbortError') {
         console.log('Streaming was aborted.');
+      } else if (error.message.includes('NetworkError')) {
+        console.error('Error during chat completion:', error);
+        alert('Ollama may not be running. Confirm and try again.');
       } else {
-        console.error('Error during streaming:', error);
+        console.error('Error during chat completion:', error);
       }
     }
 
