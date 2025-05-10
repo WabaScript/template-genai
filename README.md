@@ -3,6 +3,15 @@
 Welcome to the **GenAI Toolkit**, a starter template designed to kickstart your e-commerce experience with a focus on integrating a chatbot powered by ~~**Ollama** and the **Llama 3.2 model**~~ **Gemma3 model**. Now with **multi-modal capabilities** as well via ~~**Llama 3.2 vision**~~ **Gemma3**. This project is built using **React**, **Vite**, **TailwindCSS**, and **Flowbite-React** for a modern and responsive user interface.<br>
 <em> Currently testing Google's Gemma3 model with multi-modal capabilities built in</em>.
 
+<a href="/screenshots/screen-chat.png" target="_blank">
+  <img src="/screenshots/screen-chat.png" alt="Home Page" width="250"/>
+</a>
+<a href="/screenshots/screen-addattachment.png" target="_blank">
+  <img src="/screenshots/screen-addattachment.png" alt="Home Page" width="250"/>
+</a>
+<a href="/screenshots/screen-imagechat.png" target="_blank">
+  <img src="/screenshots/screen-imagechat.png" alt="Home Page" width="250"/>
+</a>
 
 ---
 
